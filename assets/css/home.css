@@ -1,0 +1,280 @@
+/* slider */
+#slider{ 
+	background: rgb(231, 231, 231); 
+	border: 1px solid black;
+	height: 100%;
+    overflow: hidden;
+	position: relative; 
+}								  
+
+.slider-prod{ 
+	padding: 24px; 
+}
+
+.slider-caption{
+ 	float: left;
+ 	width: 42%;
+ 	padding-left: 4%;
+	text-align: center;
+}
+
+.slider-img, .slider-img1{
+ 	float: left;
+ 	width: 50%;
+	text-align: center;
+}
+.slider-img img{
+ 	width: 70%;
+}
+.slider-img1 img{
+	width: 65%;
+}
+
+.slider-prod h1 span{ 
+	font-size: 100px; 
+	font-weight: bold;
+	color: #dd131a; 
+	text-transform: uppercase;
+ }
+.slider-prod h2{ 
+  	color: black;
+  	font-size: 30px; 
+ }
+
+.product-name{ 
+	font-weight: bold;
+	font-size: 28px; 
+	color: black;  
+	text-transform: uppercase;
+	text-align: center;
+}
+.product-name1{ 
+	font-weight: bold;
+    font-size: 25px; 
+	color: black;  
+	text-transform: uppercase;
+	padding-left: 120px;
+}
+
+/* button */
+.button{
+	font-size: 18px;
+	padding: 8px 15px;
+	text-shadow: 0px 3px 3px rgba(94, 94, 94, 0.9);
+	opacity: 1;
+    color: white;
+    text-decoration: none;
+    background-color: #dd131a;
+    display: inline-block;
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 7px rgb(156, 0, 0);
+}
+.button:hover{
+	opacity:0.5;
+}
+.button:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+/* exhibition */
+.slider-news{
+	padding-top: 40px;
+	padding-left: 165px;
+	background-color: rgb(231, 231, 231);
+	width: auto;
+	height: 580px;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.title h1{
+	margin-top:5px;
+	margin-left: 30%;
+	color: maroon;
+}
+
+
+.slider-outer img{
+	width: 50px;
+	height: 50px;
+}
+
+
+.expo-image{
+	width: 800px;
+	height: 350px;
+	float: left;
+}
+
+.expo-image img{
+	display: none;
+	width: 800px;
+	height: 470px;
+}
+
+.expo-image img.current{
+	display: inline-block;
+}
+
+.expo-image pre{
+	text-align: center;
+}
+
+.prev, .next{
+	float: left;
+	margin-top: 200px;
+	cursor: pointer;
+}
+
+.prev{
+	position: relative;
+	margin-right: 20px;
+	z-index : 100;
+}
+
+.next{
+	position: relative;
+	margin-left: 20px;
+	z-index : 100;
+}
+
+#content{
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	padding : 10px 30px 50px 30px;
+	background-color: rgb(231, 231, 231);
+	padding-bottom: 100px;
+}
+
+.head h1{
+	width: 500px;
+	margin-left: 95px;
+	color: maroon;
+}
+
+.picture{
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+.picture img{
+	padding-left: 100px;
+	width : 300px;
+}
+
+.desc{
+	margin-left: 100px;
+	padding-bottom: 10px;
+	text-align:justify;
+	font-size: 0.9em;
+	line-height: 2;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+	#content {
+		border-top: 1px solid black;
+	}
+	
+	.slider-prod{
+		margin: 0 auto;
+		width: 100%;
+		margin-left : 15%;
+	}
+	.slider-img1, .slider-img{
+		width: 100%;
+		margin-bottom: 20px;
+		margin-left: -20%;
+	}
+	.slider-prod h1 span{ 
+		font-size: 40px; 
+		margin-left: 14%;
+	}
+	.slider-prod h2{ 
+		color: black;
+		font-size: 20px; 
+		margin-left: 13%;
+		margin-right: -10%;
+	}
+	.button {
+		margin-left: 20%;
+		padding: 8px;
+		width: 90px;
+		font-size: 14px;
+
+	}
+	.picture{
+		width: 100%;
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;	
+		justify-content: center;
+		padding-bottom: 70px;
+	}
+	.picture img{
+		padding-right: 65px;
+		padding-left: 5px;
+	}
+	.head h1{
+		font-size:12px;
+		margin-left: 30px;
+	}
+	.desc{
+		margin-left: 30px;
+		margin-right:40px;
+		font-size: 10px;
+	}
+		
+	.slider-news{
+		padding-top:25px;
+		display: flex;
+		margin-bottom: -50%;
+	}
+		
+	.title h1{
+		text-align: center;
+		font-size: 22px;
+		color: maroon;
+		margin-left: 0%;
+	}
+
+	.slider-outer{
+		margin-top:20%;
+		margin-right:23%;
+	}
+
+	.expo-image img{
+		display: none;
+		margin-top:15px;
+		width: 40%;
+		height: 60%;
+		margin-left: -27%;
+	}
+	.prev {
+		margin-left: -35%;
+		margin-top: 10%;
+		margin-right: -30%;
+	}
+	.next {
+		margin-top: 10%;
+		margin-left: -83%;
+	}
+		
+	.slider-outer .prev, .slider-outer .next{
+		width: 30px;
+		height: 30px;
+	}
+	html, body{
+		overflow-x: hidden;
+	}
+}
+

@@ -1,0 +1,119 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reserve.css">
+  </head>
+  <body>
+    <div class="head">
+    <div class="logo">
+      <a href="../index.html"><img src="../assets/logo.png" alt=""></a>
+    </div>
+  </div>
+  <div class="navigation">
+    <div class="menu">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown"><a href="#">Products</a>
+        <div class="dropdown-content">
+              <a href="../products/kawasako.html">Kawasako</a>
+              <a href="../products/vixian.html">Vixian</a>
+        </div></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../reserve.html">Reserve</a></li>
+        <div class="clear"></div>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+    <main class="container1">
+      
+    
+      <div class="left-box">
+        <div class="prodInfo">
+          <h1>Vixian RX250</h1>
+          <p>Vixian RX250 motorcycle is a direct result of decades of world-class road racing innovation. The 998cc engine with superb handling and aggressive styling complements the sophisticated electronics.
+          </p>
+        </div>
+        <img pImage="blue" class="active" src="../assets/vixian1.png" alt="">
+      </div>
+
+        
+      <div class="right-box">
+
+        <div class="prodDetail">
+          <!-- Product Color -->
+          <div class="prodColor">
+            <span>Select Color
+            </span>
+            <div class="chooseColor">
+              <div>
+                <input pImage="blue" type="radio" id="blue" name="color" value="blue" checked>
+                <label for="blue">
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Input Quantity -->
+          <span class="qty-title">Input Quantity
+          </span>
+          <div class="count">
+            <span class="min" onClick='decCount(event, this)'>-</span>
+            <input class="qty" type="text" value="1">
+            <span class="add" onClick='incCount(event, this)'>+</span>
+          </div>
+          <!-- personal information -->
+          <div id="personInfo">
+            <h2>Personal Information</h2>
+            <p>Name:</p>
+            <input type="text" id="txtOrder">
+            <p>Phone Number: </p>
+            <input type="text" id="PhoneOrder">
+            <p class="gender">Gender:</p>
+            <input type="radio" id="rbGender" value="Male" name="rbGender"> Male
+            <input type="radio" id="rbGender" value="Female" name="rbGender">Female
+            <p class="city-address">City :</p>
+            <select name="city" id="slcCity">
+              <option value="Jakarta" class="city">Jakarta</option>
+              <option value="Manado" class="city">Manado</option>
+              <option value="Medan" class="city">Medan</option>
+              <option value="Bandung" class="city">Bandung</option>
+            </select>
+            <p class="city-address">Address :</p>
+            <textarea name="Address" id="address" cols="30" rows="10" placeholder="Address..." ></textarea>
+            <br>
+            <br>
+            
+            <button id="btnOrder">Order</button>
+        </div>
+
+        </div>
+    </main>
+
+    <div id="footer">
+        <p class="social">
+          <a href="https://facebook.com/" target="_blank"><img src="../assets/social/icons8-facebook-64.png" class="social-icon" alt=""></a> 
+          <a href="https://twitter.com/" target="_blank"><img src="../assets/social/icons8-twitter-48.png" class="social-icon"alt=""></a> 
+          <a href="https://www.instagram.com/" target="_blank"><img src="../assets/social/icons8-instagram-64.png" class="social-icon" alt=""></a> 
+        </p>
+        <p class="copyright">
+          &copy 2021 - Daniel, Angel, Sandrine
+        </p>
+        <p class="copyright">
+          BINUS University
+        </p>
+      </div>
+      <!-- Scripts -->
+      <script src="../assets/js/jquery-3.5.1.js" charset="utf-8">
+      </script>
+      <script src="../assets/js/jquery_colour.js" charset="utf-8">
+      </script>
+      <script src="../assets/js/submit.js" charset="utf-8">
+      </script>
+    </body>
+  </html>
+  
